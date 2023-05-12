@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import logo from "../images/RB.png";
+import Image from "next/image";
 
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
@@ -10,9 +12,11 @@ const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
   return (
     <div className="navbar-container">
-      <p className="logo">
-        <Link href="/">RosbyApparel</Link>
-      </p>
+      <div className="logo">
+        <Link href="/">
+          <Image src={logo} alt="Logo" width={50} height={50} />
+        </Link>
+      </div>
       <button
         type="button"
         className="cart-icon"
