@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import logo from "../images/RB.png";
+import Image from "next/image";
 
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
@@ -13,7 +14,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="logo">
         <Link href="/">
-          <img src={logo} alt="Logo" />
+          <Image src={logo} alt="Logo" width={50} height={50} />
         </Link>
       </div>
       <button
