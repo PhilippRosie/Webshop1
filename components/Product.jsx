@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { urlFor } from "../lib/client";
+import product from "@/webshop1/schemas/product";
 
 const Product = ({ product: { image, name, slug, price } }) => {
   return (
