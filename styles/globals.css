@@ -940,3 +940,27 @@ span.text-red {
     bottom: 8%;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .hero-banner-container .beats-solo {
+    width: 40%;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    z-index: 1;
+    width: 80px;
+  }
+  .hero-banner-container h1 {
+    position: absolute;
+    bottom: 28%;
+    left: 11%;
+    font-size: 25px;
+    z-index: 1;
+  }
+
+  .desc {
+    width: 40%;
+    position: absolute;
+    bottom: 5%;
+  }
+}
